@@ -3,20 +3,23 @@
 	"id": "beholdersvariety",
 	"version": "${version}",
 	"name": "BeholdersVariety",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is a variety mod for my various musings. Hopefully you can find something of use in this mess!",
 	"authors": [
-		"Me!"
+		"SilicateSeer"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": ""
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/beholdersvariety/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.silicateseer.beholdersvariety.BeholdersVariety"
+		],
+		"client": [
+			"com.silicateseer.beholdersvariety.BeholdersVarietyClient"
 		],
 		"fabric-datagen": [
 			"com.silicateseer.beholdersvariety.BeholdersVarietyDataGenerator"

@@ -1,0 +1,15 @@
+{
+  "item.beholdersvariety.goldendrop_seeds": "Goldendrop Seeds",
+  "item.beholdersvariety.ferrel_seeds": "Ferrel Seeds",
+  "item.beholdersvariety.gold_oreroot_seeds": "Gold Oreroot Seeds",
+  "item.beholdersvariety.iron_oreroot_seeds": "Iron Oreroot Seeds",
+  "item.beholdersvariety.copper_oreroot_seeds": "Copper Oreroot Seeds",
+  "item.beholdersvariety.goldendrop": "Goldendrop Hay",
+  "item.beholdersvariety.ferrel": "Ferrel Hay",
+
+  "block.beholdersvariety.goldendrop": "Goldendrop",
+  "block.beholdersvariety.ferrel": "Ferrel",
+  "block.beholdersvariety.gold_oreroot": "Gold Oreroot",
+  "block.beholdersvariety.iron_oreroot": "Iron Oreroot",
+  "block.beholdersvariety.copper_oreroot": "Copper Oreroot"
+}

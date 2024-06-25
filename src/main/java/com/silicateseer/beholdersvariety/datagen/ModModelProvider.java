@@ -20,12 +20,24 @@ public class ModModelProvider extends FabricModelProvider {
                 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerCrop(ModBlocks.GOLDENDROP_CROP, CropBlock.AGE,
                 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.COPPER_OREROOT_CROP, CropBlock.AGE,
+                0, 0, 2, 2, 2, 5, 5, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.IRON_OREROOT_CROP, CropBlock.AGE,
+                0, 0, 2, 2, 2, 5, 5, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.GOLD_OREROOT_CROP, CropBlock.AGE,
+                0, 0, 2, 2, 2, 5, 5, 7);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SILVER_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REDSTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_REDSTONE_BRICKS);
+
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.FERREL_HAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOLDENDROP_HAY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILVER_INGOT, Models.GENERATED);
 
     }
 }

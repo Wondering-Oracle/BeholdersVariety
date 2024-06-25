@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "iron_nugget",
+  "ingredients": [
+    {
+      "item": "beholdersvariety:ferrel_hay"
+    }
+  ],
+  "result": {
+    "count": 5,
+    "item": "minecraft:iron_nugget"
+  }
+}

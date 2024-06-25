@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gold_nugget",
+  "ingredients": [
+    {
+      "item": "beholdersvariety:goldendrop_hay"
+    }
+  ],
+  "result": {
+    "count": 5,
+    "item": "minecraft:gold_nugget"
+  }
+}

@@ -22,17 +22,38 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item GOLDENDROP_HAY = registerItem("goldendrop_hay",
             new Item(new FabricItemSettings()));
+    public static final Item COPPER_OREROOT_SEEDS = registerItem("copper_oreroot_seeds",
+            new AliasedBlockItem(ModBlocks.COPPER_OREROOT_CROP, new FabricItemSettings()));
+    public static final Item IRON_OREROOT_SEEDS = registerItem("iron_oreroot_seeds",
+            new AliasedBlockItem(ModBlocks.IRON_OREROOT_CROP, new FabricItemSettings()));
+    public static final Item GOLD_OREROOT_SEEDS = registerItem("gold_oreroot_seeds",
+            new AliasedBlockItem(ModBlocks.GOLD_OREROOT_CROP, new FabricItemSettings()));
+
+    public static final Item SILVER_INGOT = registerItem("silver_ingot",
+            new Item(new FabricItemSettings()));
+
     private static void addToIngredientsItemGroup(FabricItemGroupEntries entry) {
         entry.add(FERREL_SEEDS);
         entry.add(GOLDENDROP_SEEDS);
+        entry.add(COPPER_OREROOT_SEEDS);
+        entry.add(IRON_OREROOT_SEEDS);
+        entry.add(GOLD_OREROOT_SEEDS);
+
         entry.add(FERREL_HAY);
         entry.add(GOLDENDROP_HAY);
+
+        entry.add(SILVER_INGOT);
     }
-    private static Item registerItem(String name, Item item) {
+    private static void addToBuildingItemGroup(FabricItemGroupEntries entry) {
+        entry.add(ModBlocks.SILVER_BLOCK);
+    }
+
+        private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,
                 new Identifier(BeholdersVariety.MODID, name), item);
     }
     public static void registerModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addToIngredientsItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::addToBuildingItemGroup);
     }
 }

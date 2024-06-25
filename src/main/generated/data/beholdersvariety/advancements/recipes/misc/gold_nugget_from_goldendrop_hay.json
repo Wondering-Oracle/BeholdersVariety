@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_goldendrop_hay": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beholdersvariety:goldendrop_hay"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:gold_nugget_from_goldendrop_hay"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_goldendrop_hay"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:gold_nugget_from_goldendrop_hay"
+    ]
+  }
+}

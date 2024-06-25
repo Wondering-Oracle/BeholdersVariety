@@ -1,6 +1,6 @@
-// 1.20.4	2024-06-24T22:11:22.1804389	BeholdersVariety/Block Loot Tables
-d3b377a6aed48abd28b318cc8f8bdb2bc9cffe10 data\beholdersvariety\loot_tables\blocks\gold_oreroot.json
+// 1.20.4	2024-06-25T12:13:25.431604	BeholdersVariety/Block Loot Tables
 3af038788b8be267bf0502456e814a03ad6198c4 data\beholdersvariety\loot_tables\blocks\ferrel.json
+5dad4aabffd294ce325c1f092fef424f745755b6 data\beholdersvariety\loot_tables\blocks\gold_oreroot.json
 6e824194feb4bdf3b586708744c7e29134214f15 data\beholdersvariety\loot_tables\blocks\copper_oreroot.json
-cdc6986ea87277215f4d7467a1d2b66009649c51 data\beholdersvariety\loot_tables\blocks\iron_oreroot.json
+cac09bd69de6d045c8d324358163ef3de0ae2025 data\beholdersvariety\loot_tables\blocks\iron_oreroot.json
 76813186e7217c17ee5b7397ecf2321403c59803 data\beholdersvariety\loot_tables\blocks\goldendrop.json

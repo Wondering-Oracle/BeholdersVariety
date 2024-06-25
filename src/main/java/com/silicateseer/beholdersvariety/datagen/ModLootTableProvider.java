@@ -29,9 +29,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 .properties(StatePredicate.Builder.create().exactMatch(GoldendropCropBlock.AGE, 7));
         LootCondition.Builder copperorerootbuilder = BlockStatePropertyLootCondition.builder(ModBlocks.COPPER_OREROOT_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(CopperOrerootCropBlock.AGE, 7));
-        LootCondition.Builder ironorerootbuilder = BlockStatePropertyLootCondition.builder(ModBlocks.COPPER_OREROOT_CROP)
+        LootCondition.Builder ironorerootbuilder = BlockStatePropertyLootCondition.builder(ModBlocks.IRON_OREROOT_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(IronOrerootCropBlock.AGE, 7));
-        LootCondition.Builder goldorerootbuilder = BlockStatePropertyLootCondition.builder(ModBlocks.COPPER_OREROOT_CROP)
+        LootCondition.Builder goldorerootbuilder = BlockStatePropertyLootCondition.builder(ModBlocks.GOLD_OREROOT_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(GoldOrerootCropBlock.AGE, 7));
 
         addDrop(ModBlocks.FERREL_CROP,

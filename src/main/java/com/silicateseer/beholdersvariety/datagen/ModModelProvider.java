@@ -28,8 +28,6 @@ public class ModModelProvider extends FabricModelProvider {
                 0, 0, 2, 2, 2, 5, 5, 7);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SILVER_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REDSTONE_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_REDSTONE_BRICKS);
 
     }
 

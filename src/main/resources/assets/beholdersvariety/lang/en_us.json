@@ -13,5 +13,7 @@
   "block.beholdersvariety.iron_oreroot": "Iron Oreroot",
   "block.beholdersvariety.copper_oreroot": "Copper Oreroot",
 
-  "item.beholdersvariety.silver_ingot": "Silver Ingot"
+  "item.beholdersvariety.silver_ingot": "Silver Ingot",
+
+  "block.beholdersvariety.silver_block": "Silver Block"
 }

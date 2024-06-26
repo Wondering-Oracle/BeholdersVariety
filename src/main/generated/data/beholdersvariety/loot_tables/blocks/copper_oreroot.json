@@ -10,8 +10,26 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "beholdersvariety:copper_oreroot_seeds"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "beholdersvariety:copper_oreroot",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ],
+              "name": "beholdersvariety:copper_oreroot_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "beholdersvariety:copper_oreroot_seeds"
+            }
+          ]
         }
       ],
       "rolls": 1.0

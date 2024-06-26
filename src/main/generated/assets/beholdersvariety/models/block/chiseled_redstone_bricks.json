@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "beholdersvariety:block/chiseled_redstone_bricks"
-  }
-}

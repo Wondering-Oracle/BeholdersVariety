@@ -41,10 +41,6 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.METAL
                     )));
 
-    public static final Block REDSTONE_BRICKS = registerBlock("redstone_bricks",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).mapColor(MapColor.BRIGHT_RED)));
-    public static final Block CHISELED_REDSTONE_BRICKS = registerBlock("chiseled_redstone_bricks",
-            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).mapColor(MapColor.BRIGHT_RED)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

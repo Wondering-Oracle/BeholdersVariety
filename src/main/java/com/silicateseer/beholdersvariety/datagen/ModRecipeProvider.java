@@ -21,8 +21,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         offerShapelessRecipe(exporter, Items.IRON_NUGGET, ModItems.FERREL_HAY, "iron_nugget", 5);
         offerShapelessRecipe(exporter, Items.GOLD_NUGGET, ModItems.GOLDENDROP_HAY, "gold_nugget", 5);
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SILVER_INGOT).input(Items.IRON_NUGGET, 6).input(Items.GOLD_NUGGET, 3).group("silver_ingot").criterion("has_gold_nugget", conditionsFromItem(Items.GOLD_NUGGET)).offerTo(exporter);
-        offerReversibleCompactingRecipesWithReverseRecipeGroup(exporter, RecipeCategory.MISC, ModItems.SILVER_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SILVER_BLOCK, "silver_ingot_from_silver_block", "silver_ingot");
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SILVER_INGOT)
+                .input(Items.IRON_NUGGET, 6)
+                .input(Items.GOLD_NUGGET, 3)
+                .group("silver_ingot")
+                .criterion("has_gold_nugget", conditionsFromItem(Items.GOLD_NUGGET))
+                .offerTo(exporter);
+        offerReversibleCompactingRecipesWithReverseRecipeGroup(
+                exporter,
+                RecipeCategory.MISC,
+                ModItems.SILVER_INGOT,
+                RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.SILVER_BLOCK,
+                "silver_ingot_from_silver_block",
+                "silver_ingot");
 
     }
 }

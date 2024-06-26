@@ -28,6 +28,10 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.IRON_OREROOT_CROP, new FabricItemSettings()));
     public static final Item GOLD_OREROOT_SEEDS = registerItem("gold_oreroot_seeds",
             new AliasedBlockItem(ModBlocks.GOLD_OREROOT_CROP, new FabricItemSettings()));
+    public static final Item DIAMANTIUM_SEEDS = registerItem("diamantium_seeds",
+            new AliasedBlockItem(ModBlocks.DIAMANTIUM_CROP, new FabricItemSettings()));
+    public static final Item MERALDIUM_SEEDS = registerItem("meraldium_seeds",
+            new AliasedBlockItem(ModBlocks.MERALDIUM_CROP, new FabricItemSettings()));
 
     public static final Item SILVER_INGOT = registerItem("silver_ingot",
             new Item(new FabricItemSettings()));
@@ -38,6 +42,8 @@ public class ModItems {
         entry.add(COPPER_OREROOT_SEEDS);
         entry.add(IRON_OREROOT_SEEDS);
         entry.add(GOLD_OREROOT_SEEDS);
+        entry.add(DIAMANTIUM_SEEDS);
+        entry.add(MERALDIUM_SEEDS);
 
         entry.add(FERREL_HAY);
         entry.add(GOLDENDROP_HAY);

@@ -16,18 +16,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "beholdersvariety:iron_oreroot",
+                  "block": "beholdersvariety:meraldium",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "7"
                   }
                 }
               ],
-              "name": "beholdersvariety:iron_oreroot_seeds"
+              "name": "beholdersvariety:meraldium_seeds"
             },
             {
               "type": "minecraft:item",
-              "name": "beholdersvariety:iron_oreroot_seeds"
+              "name": "beholdersvariety:meraldium_seeds"
             }
           ]
         }
@@ -38,7 +38,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "beholdersvariety:iron_oreroot",
+          "block": "beholdersvariety:meraldium",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "7"
@@ -54,12 +54,12 @@
               "formula": "minecraft:binomial_with_bonus_count",
               "function": "minecraft:apply_bonus",
               "parameters": {
-                "extra": 3,
+                "extra": 1,
                 "probability": 0.5714286
               }
             }
           ],
-          "name": "minecraft:raw_iron"
+          "name": "minecraft:emerald"
         }
       ],
       "rolls": 1.0

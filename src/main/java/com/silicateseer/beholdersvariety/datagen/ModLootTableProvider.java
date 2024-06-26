@@ -35,6 +35,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 .properties(StatePredicate.Builder.create().exactMatch(IronOrerootCropBlock.AGE, 7));
         LootCondition.Builder goldorerootbuilder = BlockStatePropertyLootCondition.builder(ModBlocks.GOLD_OREROOT_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(GoldOrerootCropBlock.AGE, 7));
+        LootCondition.Builder diamantiumbuilder = BlockStatePropertyLootCondition.builder(ModBlocks.DIAMANTIUM_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(DiamantiumCropBlock.AGE, 7));
+        LootCondition.Builder meraldiumbuilder = BlockStatePropertyLootCondition.builder(ModBlocks.MERALDIUM_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(MeraldiumCropBlock.AGE, 7));
+
 
         addDrop(ModBlocks.FERREL_CROP, cropDrops(ModBlocks.FERREL_CROP,
                 ModItems.FERREL_HAY, ModItems.FERREL_SEEDS, ferrelbuilder));
@@ -46,6 +51,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 ModItems.IRON_OREROOT_SEEDS, Items.RAW_IRON, 3, ironorerootbuilder));
         addDrop(ModBlocks.GOLD_OREROOT_CROP, oreCropDrops(ModBlocks.GOLD_OREROOT_CROP,
                 ModItems.GOLD_OREROOT_SEEDS, Items.RAW_GOLD, 3, goldorerootbuilder));
+        addDrop(ModBlocks.DIAMANTIUM_CROP, oreCropDrops(ModBlocks.DIAMANTIUM_CROP,
+                ModItems.DIAMANTIUM_SEEDS, Items.DIAMOND, 1, diamantiumbuilder));
+        addDrop(ModBlocks.MERALDIUM_CROP, oreCropDrops(ModBlocks.MERALDIUM_CROP,
+                ModItems.MERALDIUM_SEEDS, Items.EMERALD, 1, meraldiumbuilder));
+
 
         addDrop(ModBlocks.SILVER_BLOCK);
 

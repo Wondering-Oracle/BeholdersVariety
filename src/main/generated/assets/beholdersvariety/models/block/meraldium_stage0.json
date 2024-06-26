@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "beholdersvariety:block/meraldium_stage0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "beholdersvariety:block/meraldium_stage0"
+    },
+    "age=1": {
+      "model": "beholdersvariety:block/meraldium_stage0"
+    },
+    "age=2": {
+      "model": "beholdersvariety:block/meraldium_stage2"
+    },
+    "age=3": {
+      "model": "beholdersvariety:block/meraldium_stage2"
+    },
+    "age=4": {
+      "model": "beholdersvariety:block/meraldium_stage4"
+    },
+    "age=5": {
+      "model": "beholdersvariety:block/meraldium_stage4"
+    },
+    "age=6": {
+      "model": "beholdersvariety:block/meraldium_stage4"
+    },
+    "age=7": {
+      "model": "beholdersvariety:block/meraldium_stage7"
+    }
+  }
+}

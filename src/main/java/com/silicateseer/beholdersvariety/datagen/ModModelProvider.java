@@ -26,6 +26,10 @@ public class ModModelProvider extends FabricModelProvider {
                 0, 0, 2, 2, 2, 5, 5, 7);
         blockStateModelGenerator.registerCrop(ModBlocks.GOLD_OREROOT_CROP, CropBlock.AGE,
                 0, 0, 2, 2, 2, 5, 5, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.DIAMANTIUM_CROP, CropBlock.AGE,
+                0, 0, 2, 2, 4, 4, 4, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.MERALDIUM_CROP, CropBlock.AGE,
+                0, 0, 2, 2, 4, 4, 4, 7);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SILVER_BLOCK);
 

@@ -1,10 +1,7 @@
 package com.silicateseer.beholdersvariety.block;
 
 import com.silicateseer.beholdersvariety.BeholdersVariety;
-import com.silicateseer.beholdersvariety.block.cropblock.CopperOrerootCropBlock;
-import com.silicateseer.beholdersvariety.block.cropblock.FerrelCropBlock;
-import com.silicateseer.beholdersvariety.block.cropblock.GoldOrerootCropBlock;
-import com.silicateseer.beholdersvariety.block.cropblock.IronOrerootCropBlock;
+import com.silicateseer.beholdersvariety.block.cropblock.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -31,6 +28,12 @@ public class ModBlocks {
     public static final Block GOLD_OREROOT_CROP = Registry.register(Registries.BLOCK,
             new Identifier(BeholdersVariety.MODID, "gold_oreroot"),
             new GoldOrerootCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
+    public static final Block DIAMANTIUM_CROP = Registry.register(Registries.BLOCK,
+            new Identifier(BeholdersVariety.MODID, "diamantium"),
+            new DiamantiumCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
+    public static final Block MERALDIUM_CROP = Registry.register(Registries.BLOCK,
+            new Identifier(BeholdersVariety.MODID, "meraldium"),
+            new MeraldiumCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
 
     public static final Block SILVER_BLOCK = registerBlock("silver_block",
             new Block(FabricBlockSettings.create()

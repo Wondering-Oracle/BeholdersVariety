@@ -41,8 +41,27 @@ public class ModBlocks {
                     .instrument(Instrument.BELL)
                     .requiresTool()
                     .strength(3.0F, 6.0F)
-                    .sounds(BlockSoundGroup.METAL
-                    )));
+                    .sounds(BlockSoundGroup.METAL)
+            )
+    );
+    public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block",
+            new Block(FabricBlockSettings.create()
+                    .mapColor(MapColor.DARK_RED)
+                    .instrument(Instrument.BELL)
+                    .requiresTool()
+                    .strength(3.0F, 6.0F)
+                    .sounds(BlockSoundGroup.METAL)
+            )
+    );
+    public static final Block CRYSTEEL_BLOCK = registerBlock("crysteel_block",
+            new Block(FabricBlockSettings.create()
+                    .mapColor(MapColor.WHITE_GRAY)
+                    .instrument(Instrument.IRON_XYLOPHONE)
+                    .requiresTool()
+                    .strength(5.0F, 6.0F)
+                    .sounds(BlockSoundGroup.METAL)
+            )
+    );
 
 
     private static Block registerBlock(String name, Block block) {

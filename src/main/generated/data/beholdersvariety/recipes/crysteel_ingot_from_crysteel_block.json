@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "crysteel_ingot",
+  "ingredients": [
+    {
+      "item": "beholdersvariety:crysteel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "beholdersvariety:crysteel_ingot"
+  }
+}

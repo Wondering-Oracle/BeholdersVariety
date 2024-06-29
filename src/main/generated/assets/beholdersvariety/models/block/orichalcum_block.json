@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "beholdersvariety:block/orichalcum_block"
+  }
+}

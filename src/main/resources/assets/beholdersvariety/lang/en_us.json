@@ -19,6 +19,26 @@
   "block.beholdersvariety.meraldium": "Meraldium",
 
   "item.beholdersvariety.silver_ingot": "Silver Ingot",
+  "item.beholdersvariety.orichalcum_ingot": "Orichalcum Ingot",
+  "item.beholdersvariety.crysteel_ingot": "Crysteel Ingot",
+  "item.beholdersvariety.silver_sword": "Silver Sword",
+  "item.beholdersvariety.silver_shovel": "Silver Shovel",
+  "item.beholdersvariety.silver_pickaxe": "Silver Pickaxe",
+  "item.beholdersvariety.silver_axe": "Silver Axe",
+  "item.beholdersvariety.silver_hoe": "Silver Hoe",
+  "item.beholdersvariety.orichalcum_sword": "Orichalcum Sword",
+  "item.beholdersvariety.orichalcum_shovel": "Orichalcum Shovel",
+  "item.beholdersvariety.orichalcum_pickaxe": "Orichalcum Pickaxe",
+  "item.beholdersvariety.orichalcum_axe": "Orichalcum Axe",
+  "item.beholdersvariety.orichalcum_hoe": "Orichalcum Hoe",
+  "item.beholdersvariety.crysteel_sword": "Crysteel Sword",
+  "item.beholdersvariety.crysteel_shovel": "Crysteel Shovel",
+  "item.beholdersvariety.crysteel_pickaxe": "Crysteel Pickaxe",
+  "item.beholdersvariety.crysteel_axe": "Crysteel Axe",
+  "item.beholdersvariety.crysteel_hoe": "Crysteel Hoe",
 
-  "block.beholdersvariety.silver_block": "Silver Block"
+
+  "block.beholdersvariety.silver_block": "Silver Block",
+  "block.beholdersvariety.orichalcum_block": "Orichalcum Block",
+  "block.beholdersvariety.crysteel_block": "Crysteel Block"
 }

@@ -1,9 +1,11 @@
-// 1.20.4	2024-06-26T19:30:04.0680878	BeholdersVariety/Block Loot Tables
+// 1.20.4	2024-06-29T13:53:50.381856	BeholdersVariety/Block Loot Tables
 c33150295299dd7d226df9e2a25e4055ec3f3236 data\beholdersvariety\loot_tables\blocks\gold_oreroot.json
 3af038788b8be267bf0502456e814a03ad6198c4 data\beholdersvariety\loot_tables\blocks\ferrel.json
 ad138de415a7a0c47d32190f9e7611fd6fd82cfd data\beholdersvariety\loot_tables\blocks\meraldium.json
 cd5fc78874f390fe192db554ebb5c26909bb6fbb data\beholdersvariety\loot_tables\blocks\copper_oreroot.json
 3675d2e9b4947d491bfbb98cf40bc4b4d6d10365 data\beholdersvariety\loot_tables\blocks\iron_oreroot.json
 dd3126a6aa87d65d4758001944ca83ceab572423 data\beholdersvariety\loot_tables\blocks\diamantium.json
+97dfe4b8fe3a74f26983db6f089f34dbe8434330 data\beholdersvariety\loot_tables\blocks\orichalcum_block.json
 76813186e7217c17ee5b7397ecf2321403c59803 data\beholdersvariety\loot_tables\blocks\goldendrop.json
+62ce2542095be656a4ecdeb66fcbd54ac78bae2d data\beholdersvariety\loot_tables\blocks\crysteel_block.json
 bb26d7d24ad4ce6eb651559f153f500881174263 data\beholdersvariety\loot_tables\blocks\silver_block.json

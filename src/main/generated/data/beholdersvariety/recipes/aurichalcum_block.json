@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "beholdersvariety:orichalcum_ingot"
+      "item": "beholdersvariety:aurichalcum_ingot"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
     "###"
   ],
   "result": {
-    "item": "beholdersvariety:orichalcum_block"
+    "item": "beholdersvariety:aurichalcum_block"
   }
 }

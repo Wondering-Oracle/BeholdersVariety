@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements ToolMaterial {
     SILVER(MiningLevels.STONE, 101, 8.0f, 1.0f, 19, () -> Ingredient.ofItems(ModItems.SILVER_INGOT)),
     CRYSTEEL(MiningLevels.IRON, 300, 8.0F, 2.0F, 14, () -> Ingredient.ofItems(ModItems.CRYSTEEL_INGOT)),
-    ORICHALCUM(MiningLevels.IRON, 187, 9.0F, 1.0F, 20, () -> Ingredient.ofItems(ModItems.ORICHALCUM_INGOT));
+    AURICHALCUM(MiningLevels.IRON, 187, 9.0F, 1.0F, 20, () -> Ingredient.ofItems(ModItems.AURICHALCUM_INGOT));
 
     public final int miningLevel;
     public final int itemDurability;

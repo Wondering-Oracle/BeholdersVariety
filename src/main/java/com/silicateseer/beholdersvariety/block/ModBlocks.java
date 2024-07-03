@@ -44,7 +44,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.METAL)
             )
     );
-    public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block",
+    public static final Block AURICHALCUM_BLOCK = registerBlock("aurichalcum_block",
             new Block(FabricBlockSettings.create()
                     .mapColor(MapColor.DARK_RED)
                     .instrument(Instrument.BELL)

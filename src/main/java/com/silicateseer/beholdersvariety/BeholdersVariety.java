@@ -2,8 +2,11 @@ package com.silicateseer.beholdersvariety;
 
 import com.silicateseer.beholdersvariety.block.ModBlocks;
 import com.silicateseer.beholdersvariety.item.ModItems;
+import com.silicateseer.beholdersvariety.recipes.ModBrewingRecipes;
+import me.emafire003.dev.custombrewrecipes.CustomBrewRecipeRegister;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.item.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,5 +29,6 @@ public class BeholdersVariety implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBrewingRecipes.registerModBrewingRecipes();
 	}
 }

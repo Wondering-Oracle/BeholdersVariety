@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_orichalcum_ingot": {
+    "has_aurichalcum_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "beholdersvariety:orichalcum_ingot"
+              "beholdersvariety:aurichalcum_ingot"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:orichalcum_block"
+        "recipe": "beholdersvariety:aurichalcum_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_orichalcum_ingot"
+      "has_aurichalcum_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:orichalcum_block"
+      "beholdersvariety:aurichalcum_axe"
     ]
   }
 }

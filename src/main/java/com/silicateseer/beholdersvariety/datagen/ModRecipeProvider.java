@@ -7,10 +7,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
-
-import java.util.List;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) {
@@ -40,11 +40,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipesWithReverseRecipeGroup(
                 exporter,
                 RecipeCategory.MISC,
-                ModItems.ORICHALCUM_INGOT,
+                ModItems.AURICHALCUM_INGOT,
                 RecipeCategory.BUILDING_BLOCKS,
-                ModBlocks.ORICHALCUM_BLOCK,
-                "orichalcum_ingot_from_orichalcum_block",
-                "orichalcum_ingot");
+                ModBlocks.AURICHALCUM_BLOCK,
+                "aurichalcum_ingot_from_aurichalcum_block",
+                "aurichalcum_ingot");
         offerReversibleCompactingRecipesWithReverseRecipeGroup(
                 exporter,
                 RecipeCategory.MISC,
@@ -54,88 +54,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 "crysteel_ingot_from_crysteel_block",
                 "crysteel_ingot");
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SILVER_AXE)
-                .input('#', Items.STICK)
-                .input('X', ModItems.SILVER_INGOT)
-                .pattern("XX")
-                .pattern("X#")
-                .pattern(" #")
-                .criterion("has_silver_ingot", conditionsFromItem(ModItems.SILVER_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SILVER_HOE)
-                .input('#', Items.STICK)
-                .input('X', ModItems.SILVER_INGOT)
-                .pattern("XX")
-                .pattern(" #")
-                .pattern(" #")
-                .criterion("has_silver_ingot", conditionsFromItem(ModItems.SILVER_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SILVER_PICKAXE)
-                .input('#', Items.STICK)
-                .input('X', ModItems.SILVER_INGOT)
-                .pattern("XXX")
-                .pattern(" # ")
-                .pattern(" # ")
-                .criterion("has_silver_ingot", conditionsFromItem(ModItems.SILVER_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SILVER_SHOVEL)
-                .input('#', Items.STICK)
-                .input('X', ModItems.SILVER_INGOT)
-                .pattern("X")
-                .pattern("#")
-                .pattern("#")
-                .criterion("has_silver_ingot", conditionsFromItem(ModItems.SILVER_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SILVER_SWORD)
-                .input('#', Items.STICK)
-                .input('X', ModItems.SILVER_INGOT)
-                .pattern("X")
-                .pattern("X")
-                .pattern("#")
-                .criterion("has_silver_ingot", conditionsFromItem(ModItems.SILVER_INGOT))
-                .offerTo(exporter);
+        offerAxeRecipe("silver", ModItems.SILVER_AXE, ModItems.SILVER_INGOT, exporter);
+        offerHoeRecipe("silver", ModItems.SILVER_HOE, ModItems.SILVER_INGOT, exporter);
+        offerPickaxeRecipe("silver", ModItems.SILVER_PICKAXE, ModItems.SILVER_INGOT, exporter);
+        offerShovelRecipe("silver", ModItems.SILVER_SHOVEL, ModItems.SILVER_INGOT, exporter);
+        offerSwordRecipe("silver", ModItems.SILVER_SWORD, ModItems.SILVER_INGOT, exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ORICHALCUM_AXE)
-                .input('#', Items.STICK)
-                .input('X', ModItems.ORICHALCUM_INGOT)
-                .pattern("XX")
-                .pattern("X#")
-                .pattern(" #")
-                .criterion("has_orichalcum_ingot", conditionsFromItem(ModItems.ORICHALCUM_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ORICHALCUM_HOE)
-                .input('#', Items.STICK)
-                .input('X', ModItems.ORICHALCUM_INGOT)
-                .pattern("XX")
-                .pattern(" #")
-                .pattern(" #")
-                .criterion("has_orichalcum_ingot", conditionsFromItem(ModItems.ORICHALCUM_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ORICHALCUM_PICKAXE)
-                .input('#', Items.STICK)
-                .input('X', ModItems.ORICHALCUM_INGOT)
-                .pattern("XXX")
-                .pattern(" # ")
-                .pattern(" # ")
-                .criterion("has_orichalcum_ingot", conditionsFromItem(ModItems.ORICHALCUM_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ORICHALCUM_SHOVEL)
-                .input('#', Items.STICK)
-                .input('X', ModItems.ORICHALCUM_INGOT)
-                .pattern("X")
-                .pattern("#")
-                .pattern("#")
-                .criterion("has_orichalcum_ingot", conditionsFromItem(ModItems.ORICHALCUM_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ORICHALCUM_SWORD)
-                .input('#', Items.STICK)
-                .input('X', ModItems.ORICHALCUM_INGOT)
-                .pattern("X")
-                .pattern("X")
-                .pattern("#")
-                .criterion("has_orichalcum_ingot", conditionsFromItem(ModItems.ORICHALCUM_INGOT))
-                .offerTo(exporter);
+        offerAxeRecipe("aurichalcum", ModItems.AURICHALCUM_AXE, ModItems.AURICHALCUM_INGOT, exporter);
+        offerHoeRecipe("aurichalcum", ModItems.AURICHALCUM_HOE, ModItems.AURICHALCUM_INGOT, exporter);
+        offerPickaxeRecipe("aurichalcum", ModItems.AURICHALCUM_PICKAXE, ModItems.AURICHALCUM_INGOT, exporter);
+        offerShovelRecipe("aurichalcum", ModItems.AURICHALCUM_SHOVEL, ModItems.AURICHALCUM_INGOT, exporter);
+        offerSwordRecipe("aurichalcum", ModItems.AURICHALCUM_SWORD, ModItems.AURICHALCUM_INGOT, exporter);
 
+        offerAxeRecipe("crysteel", ModItems.CRYSTEEL_AXE, ModItems.CRYSTEEL_INGOT, exporter);
+        offerHoeRecipe("crysteel", ModItems.CRYSTEEL_HOE, ModItems.CRYSTEEL_INGOT, exporter);
+        offerPickaxeRecipe("crysteel", ModItems.CRYSTEEL_PICKAXE, ModItems.CRYSTEEL_INGOT, exporter);
+        offerShovelRecipe("crysteel", ModItems.CRYSTEEL_SHOVEL, ModItems.CRYSTEEL_INGOT, exporter);
+        offerSwordRecipe("crysteel", ModItems.CRYSTEEL_SWORD, ModItems.CRYSTEEL_INGOT, exporter);
+/*
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CRYSTEEL_AXE)
                 .input('#', Items.STICK)
                 .input('X', ModItems.CRYSTEEL_INGOT)
@@ -176,6 +112,58 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("#")
                 .criterion("has_crysteel_ingot", conditionsFromItem(ModItems.CRYSTEEL_INGOT))
                 .offerTo(exporter);
+*/
 
+    }
+
+    public static void offerAxeRecipe(String material, ItemConvertible output, ItemConvertible input, RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output)
+                .input('#', Items.STICK)
+                .input('X', input)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .criterion("has_"+material+"_ingot", conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+   public static void offerHoeRecipe(String material, ItemConvertible output, ItemConvertible input, RecipeExporter exporter) {
+       ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output)
+               .input('#', Items.STICK)
+               .input('X', input)
+               .pattern("XX")
+               .pattern(" #")
+               .pattern(" #")
+               .criterion("has_"+material+"_ingot", conditionsFromItem(input))
+               .offerTo(exporter);
+    }
+   public static void offerPickaxeRecipe(String material, ItemConvertible output, ItemConvertible input, RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output)
+                .input('#', Items.STICK)
+                .input('X', input)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .criterion("has_"+material+"_ingot", conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+   public static void offerShovelRecipe(String material, ItemConvertible output, ItemConvertible input, RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output)
+                .input('#', Items.STICK)
+                .input('X', input)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .criterion("has_"+material+"_ingot", conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+   public static void offerSwordRecipe(String material, ItemConvertible output, ItemConvertible input, RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
+                .input('#', Items.STICK)
+                .input('X', input)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .criterion("has_"+material+"_ingot", conditionsFromItem(input))
+                .offerTo(exporter);
     }
 }

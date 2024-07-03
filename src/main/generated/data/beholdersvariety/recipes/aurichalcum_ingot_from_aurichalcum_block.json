@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "orichalcum_ingot",
+  "group": "aurichalcum_ingot",
   "ingredients": [
     {
-      "item": "beholdersvariety:orichalcum_block"
+      "item": "beholdersvariety:aurichalcum_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "beholdersvariety:orichalcum_ingot"
+    "item": "beholdersvariety:aurichalcum_ingot"
   }
 }

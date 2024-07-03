@@ -33,7 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
                 0, 0, 2, 2, 4, 4, 4, 7);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SILVER_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORICHALCUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AURICHALCUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRYSTEEL_BLOCK);
     }
 
@@ -42,7 +42,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FERREL_HAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOLDENDROP_HAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ORICHALCUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AURICHALCUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRYSTEEL_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SILVER_SWORD, Models.HANDHELD);
@@ -50,11 +50,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SILVER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_HOE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.ORICHALCUM_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.ORICHALCUM_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.ORICHALCUM_AXE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.ORICHALCUM_SHOVEL, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.ORICHALCUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURICHALCUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURICHALCUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURICHALCUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURICHALCUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AURICHALCUM_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CRYSTEEL_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CRYSTEEL_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CRYSTEEL_AXE, Models.HANDHELD);

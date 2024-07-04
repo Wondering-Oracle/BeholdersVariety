@@ -1,4 +1,4 @@
-// 1.20.4	2024-07-03T19:35:47.0954604	BeholdersVariety/Recipes
+// 1.20.4	2024-07-03T19:50:27.9895637	BeholdersVariety/Recipes
 9c7531ed0730c19a9c28e28561b7eba653b8dbaf data\beholdersvariety\recipes\silver_ingot.json
 ca1d408efbd90ea5da47bf2409386831c454917b data\beholdersvariety\recipes\crysteel_shovel.json
 16b3c42b96e19aa794832a60a6a5d9f22a00088f data\beholdersvariety\recipes\silver_hoe.json
@@ -15,8 +15,8 @@ cb9469d915868b641458fc67ef8e391775e32af9 data\beholdersvariety\advancements\reci
 0e1c8af6e6d28022552cbb5b05a8d601de95ff9b data\beholdersvariety\advancements\recipes\building_blocks\silver_block.json
 cb560f461e2c279d1702d3450ee0070b1b53fa50 data\beholdersvariety\recipes\silver_sword.json
 e0ac5b41c31b6c888ab6c1a3e31ec1d78abeb27f data\beholdersvariety\recipes\crysteel_pickaxe.json
-8fde1f65a9dd1a8bb1964d6c0459a68252d81257 data\beholdersvariety\advancements\recipes\misc\aurichalcum_ingot_from_aurichalcum_block.json
 5b3291d46a8d7c8c17a51d126bffacd44e100a49 data\beholdersvariety\advancements\recipes\tools\silver_axe.json
+8fde1f65a9dd1a8bb1964d6c0459a68252d81257 data\beholdersvariety\advancements\recipes\misc\aurichalcum_ingot_from_aurichalcum_block.json
 7b6b7a66243e6a24d4edab821785c59526af29e0 data\beholdersvariety\advancements\recipes\misc\gold_nugget_from_goldendrop_hay.json
 b25e74a4fbc1911d32918be1a4db4861f0414841 data\beholdersvariety\advancements\recipes\tools\crysteel_hoe.json
 1cba42f2dd933f1ab28f91623d7b3a11eaf81798 data\beholdersvariety\advancements\recipes\combat\silver_sword.json

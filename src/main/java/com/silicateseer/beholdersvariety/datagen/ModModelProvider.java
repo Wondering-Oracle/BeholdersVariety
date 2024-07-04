@@ -41,6 +41,8 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.FERREL_HAY, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOLDENDROP_HAY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.METAMORPHIC_WHEAT_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.METAMORPHIC_BEETROOT_SEEDS, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.AURICHALCUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRYSTEEL_INGOT, Models.GENERATED);

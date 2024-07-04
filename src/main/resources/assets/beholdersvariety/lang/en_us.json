@@ -7,6 +7,8 @@
   "item.beholdersvariety.meraldium_seeds": "Meraldium Seeds",
   "item.beholdersvariety.diamantium_seeds": "Diamantium Seeds",
 
+  "item.beholdersvariety.metamorphic_wheat_seeds": "Metamorphic Wheat Seeds",
+  "item.beholdersvariety.metamorphic_beetroot_seeds": "Metamorphic Beetroot Seeds",
   "item.beholdersvariety.goldendrop_hay": "Goldendrop Hay",
   "item.beholdersvariety.ferrel_hay": "Ferrel Hay",
 
@@ -19,18 +21,18 @@
   "block.beholdersvariety.meraldium": "Meraldium",
 
   "item.beholdersvariety.silver_ingot": "Silver Ingot",
-  "item.beholdersvariety.orichalcum_ingot": "Orichalcum Ingot",
+  "item.beholdersvariety.aurichalcum_ingot": "Aurichalcum Ingot",
   "item.beholdersvariety.crysteel_ingot": "Crysteel Ingot",
   "item.beholdersvariety.silver_sword": "Silver Sword",
   "item.beholdersvariety.silver_shovel": "Silver Shovel",
   "item.beholdersvariety.silver_pickaxe": "Silver Pickaxe",
   "item.beholdersvariety.silver_axe": "Silver Axe",
   "item.beholdersvariety.silver_hoe": "Silver Hoe",
-  "item.beholdersvariety.orichalcum_sword": "Orichalcum Sword",
-  "item.beholdersvariety.orichalcum_shovel": "Orichalcum Shovel",
-  "item.beholdersvariety.orichalcum_pickaxe": "Orichalcum Pickaxe",
-  "item.beholdersvariety.orichalcum_axe": "Orichalcum Axe",
-  "item.beholdersvariety.orichalcum_hoe": "Orichalcum Hoe",
+  "item.beholdersvariety.aurichalcum_sword": "Aurichalcum Sword",
+  "item.beholdersvariety.aurichalcum_shovel": "Aurichalcum Shovel",
+  "item.beholdersvariety.aurichalcum_pickaxe": "Aurichalcum Pickaxe",
+  "item.beholdersvariety.aurichalcum_axe": "Aurichalcum Axe",
+  "item.beholdersvariety.aurichalcum_hoe": "Aurichalcum Hoe",
   "item.beholdersvariety.crysteel_sword": "Crysteel Sword",
   "item.beholdersvariety.crysteel_shovel": "Crysteel Shovel",
   "item.beholdersvariety.crysteel_pickaxe": "Crysteel Pickaxe",
@@ -39,6 +41,6 @@
 
 
   "block.beholdersvariety.silver_block": "Silver Block",
-  "block.beholdersvariety.orichalcum_block": "Orichalcum Block",
+  "block.beholdersvariety.aurichalcum_block": "Aurichalcum Block",
   "block.beholdersvariety.crysteel_block": "Crysteel Block"
 }

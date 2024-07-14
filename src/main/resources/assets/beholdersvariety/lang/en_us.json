@@ -18,29 +18,5 @@
   "block.beholdersvariety.iron_oreroot": "Iron Oreroot",
   "block.beholdersvariety.copper_oreroot": "Copper Oreroot",
   "block.beholdersvariety.diamantium": "Diamantium",
-  "block.beholdersvariety.meraldium": "Meraldium",
-
-  "item.beholdersvariety.silver_ingot": "Silver Ingot",
-  "item.beholdersvariety.aurichalcum_ingot": "Aurichalcum Ingot",
-  "item.beholdersvariety.crysteel_ingot": "Crysteel Ingot",
-  "item.beholdersvariety.silver_sword": "Silver Sword",
-  "item.beholdersvariety.silver_shovel": "Silver Shovel",
-  "item.beholdersvariety.silver_pickaxe": "Silver Pickaxe",
-  "item.beholdersvariety.silver_axe": "Silver Axe",
-  "item.beholdersvariety.silver_hoe": "Silver Hoe",
-  "item.beholdersvariety.aurichalcum_sword": "Aurichalcum Sword",
-  "item.beholdersvariety.aurichalcum_shovel": "Aurichalcum Shovel",
-  "item.beholdersvariety.aurichalcum_pickaxe": "Aurichalcum Pickaxe",
-  "item.beholdersvariety.aurichalcum_axe": "Aurichalcum Axe",
-  "item.beholdersvariety.aurichalcum_hoe": "Aurichalcum Hoe",
-  "item.beholdersvariety.crysteel_sword": "Crysteel Sword",
-  "item.beholdersvariety.crysteel_shovel": "Crysteel Shovel",
-  "item.beholdersvariety.crysteel_pickaxe": "Crysteel Pickaxe",
-  "item.beholdersvariety.crysteel_axe": "Crysteel Axe",
-  "item.beholdersvariety.crysteel_hoe": "Crysteel Hoe",
-
-
-  "block.beholdersvariety.silver_block": "Silver Block",
-  "block.beholdersvariety.aurichalcum_block": "Aurichalcum Block",
-  "block.beholdersvariety.crysteel_block": "Crysteel Block"
+  "block.beholdersvariety.meraldium": "Meraldium"
 }

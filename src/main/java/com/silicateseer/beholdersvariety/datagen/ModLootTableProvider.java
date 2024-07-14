@@ -55,12 +55,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 ModItems.DIAMANTIUM_SEEDS, Items.DIAMOND, 1, diamantiumbuilder));
         addDrop(ModBlocks.MERALDIUM_CROP, oreCropDrops(ModBlocks.MERALDIUM_CROP,
                 ModItems.MERALDIUM_SEEDS, Items.EMERALD, 1, meraldiumbuilder));
-
-
-        addDrop(ModBlocks.SILVER_BLOCK);
-        addDrop(ModBlocks.AURICHALCUM_BLOCK);
-        addDrop(ModBlocks.CRYSTEEL_BLOCK);
-
     }
 
     public LootTable.Builder oreCropDrops(Block crop, Item seeds, Item resource, Integer amount, LootCondition.Builder condition) {

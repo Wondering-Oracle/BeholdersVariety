@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -34,35 +35,6 @@ public class ModBlocks {
     public static final Block MERALDIUM_CROP = Registry.register(Registries.BLOCK,
             new Identifier(BeholdersVariety.MODID, "meraldium"),
             new MeraldiumCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
-
-    public static final Block SILVER_BLOCK = registerBlock("silver_block",
-            new Block(FabricBlockSettings.create()
-                    .mapColor(MapColor.IRON_GRAY)
-                    .instrument(Instrument.BELL)
-                    .requiresTool()
-                    .strength(3.0F, 6.0F)
-                    .sounds(BlockSoundGroup.METAL)
-            )
-    );
-    public static final Block AURICHALCUM_BLOCK = registerBlock("aurichalcum_block",
-            new Block(FabricBlockSettings.create()
-                    .mapColor(MapColor.DARK_RED)
-                    .instrument(Instrument.BELL)
-                    .requiresTool()
-                    .strength(3.0F, 6.0F)
-                    .sounds(BlockSoundGroup.METAL)
-            )
-    );
-    public static final Block CRYSTEEL_BLOCK = registerBlock("crysteel_block",
-            new Block(FabricBlockSettings.create()
-                    .mapColor(MapColor.WHITE_GRAY)
-                    .instrument(Instrument.IRON_XYLOPHONE)
-                    .requiresTool()
-                    .strength(5.0F, 6.0F)
-                    .sounds(BlockSoundGroup.METAL)
-            )
-    );
-
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

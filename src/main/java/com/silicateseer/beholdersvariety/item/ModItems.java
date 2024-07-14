@@ -36,39 +36,6 @@ public class ModItems {
     public static final Item MERALDIUM_SEEDS = registerItem("meraldium_seeds",
             new AliasedBlockItem(ModBlocks.MERALDIUM_CROP, new FabricItemSettings()));
 
-    public static final Item SILVER_INGOT = registerItem("silver_ingot",
-            new Item(new FabricItemSettings()));
-    public static final Item AURICHALCUM_INGOT = registerItem("aurichalcum_ingot",
-            new Item(new FabricItemSettings()));
-    public static final Item CRYSTEEL_INGOT = registerItem("crysteel_ingot",
-            new Item(new FabricItemSettings()));
-
-    public static final Item SILVER_SWORD = registerSwordItem("silver_sword", ModToolMaterials.SILVER);
-    public static final Item AURICHALCUM_SWORD = registerSwordItem("aurichalcum_sword", ModToolMaterials.AURICHALCUM);
-    public static final Item CRYSTEEL_SWORD = registerSwordItem("crysteel_sword", ModToolMaterials.CRYSTEEL);
-
-    public static final Item SILVER_SHOVEL = registerShovelItem("silver_shovel", ModToolMaterials.SILVER);
-    public static final Item AURICHALCUM_SHOVEL = registerShovelItem("aurichalcum_shovel", ModToolMaterials.AURICHALCUM);
-    public static final Item CRYSTEEL_SHOVEL = registerShovelItem("crysteel_shovel", ModToolMaterials.CRYSTEEL);
-
-    public static final Item SILVER_PICKAXE = registerPickItem("silver_pickaxe", ModToolMaterials.SILVER);
-    public static final Item AURICHALCUM_PICKAXE = registerPickItem("aurichalcum_pickaxe", ModToolMaterials.AURICHALCUM);
-    public static final Item CRYSTEEL_PICKAXE = registerPickItem("crysteel_pickaxe", ModToolMaterials.CRYSTEEL);
-
-    public static final Item SILVER_AXE = registerItem("silver_axe",
-            new AxeItem(ModToolMaterials.SILVER, 6.0F, -3.0F, new FabricItemSettings()));
-    public static final Item AURICHALCUM_AXE = registerItem("aurichalcum_axe",
-            new AxeItem(ModToolMaterials.AURICHALCUM, 6.0F, -3.1F, new FabricItemSettings()));
-    public static final Item CRYSTEEL_AXE = registerItem("crysteel_axe",
-            new AxeItem(ModToolMaterials.CRYSTEEL, 6.0F, -3.1F, new FabricItemSettings()));
-
-    public static final Item SILVER_HOE = registerItem("silver_hoe",
-            new HoeItem(ModToolMaterials.SILVER, -2, -2.0F, new FabricItemSettings()));
-    public static final Item AURICHALCUM_HOE = registerItem("aurichalcum_hoe",
-            new HoeItem(ModToolMaterials.AURICHALCUM, -2, -1.0F, new FabricItemSettings()));
-    public static final Item CRYSTEEL_HOE = registerItem("crysteel_hoe",
-            new HoeItem(ModToolMaterials.CRYSTEEL, -2, -1.0F, new FabricItemSettings()));
-
     private static void addToIngredientsItemGroup(FabricItemGroupEntries entry) {
         entry.add(METAMORPHIC_WHEAT_SEEDS);
         entry.add(FERREL_SEEDS);
@@ -82,53 +49,15 @@ public class ModItems {
 
         entry.add(FERREL_HAY);
         entry.add(GOLDENDROP_HAY);
-
-        entry.add(SILVER_INGOT);
-        entry.add(AURICHALCUM_INGOT);
-        entry.add(CRYSTEEL_INGOT);
     }
-    private static void addToBuildingItemGroup(FabricItemGroupEntries entry) {
-        entry.add(ModBlocks.SILVER_BLOCK);
-        entry.add(ModBlocks.AURICHALCUM_BLOCK);
-        entry.add(ModBlocks.CRYSTEEL_BLOCK);
-    }
-    private static void addToCombatItemGroup(FabricItemGroupEntries entry) {
-        entry.add(ModItems.SILVER_SWORD);
-        entry.add(ModItems.AURICHALCUM_SWORD);
-        entry.add(ModItems.CRYSTEEL_SWORD);
-        entry.add(ModItems.SILVER_AXE);
-        entry.add(ModItems.AURICHALCUM_AXE);
-        entry.add(ModItems.CRYSTEEL_AXE);
-    }
-    private static void addToToolsItemGroup(FabricItemGroupEntries entry) {
-        entry.add(ModItems.SILVER_SHOVEL);
-        entry.add(ModItems.SILVER_PICKAXE);
-        entry.add(ModItems.SILVER_AXE);
-        entry.add(ModItems.SILVER_HOE);
-        entry.add(ModItems.AURICHALCUM_SHOVEL);
-        entry.add(ModItems.AURICHALCUM_PICKAXE);
-        entry.add(ModItems.AURICHALCUM_AXE);
-        entry.add(ModItems.AURICHALCUM_HOE);
-        entry.add(ModItems.CRYSTEEL_SHOVEL);
-        entry.add(ModItems.CRYSTEEL_PICKAXE);
-        entry.add(ModItems.CRYSTEEL_AXE);
-        entry.add(ModItems.CRYSTEEL_HOE);
-    }
+    private static void addToBuildingItemGroup(FabricItemGroupEntries entry) {}
+    private static void addToCombatItemGroup(FabricItemGroupEntries entry) {}
+    private static void addToToolsItemGroup(FabricItemGroupEntries entry) {}
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,
                 new Identifier(BeholdersVariety.MODID, name), item);
     }
-    private static Item registerSwordItem(String name, ToolMaterial material) {
-        return registerItem(name, new SwordItem(material, 3, -2.4F, new FabricItemSettings()));
-    }
-    private static Item registerShovelItem(String name, ToolMaterial material) {
-        return registerItem(name, new ShovelItem(material, 1.5F, -3.0F, new FabricItemSettings()));
-    }
-    private static Item registerPickItem(String name, ToolMaterial material) {
-        return registerItem(name, new PickaxeItem(material, 1, -2.8F, new FabricItemSettings()));
-    }
-
     public static void registerModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addToIngredientsItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::addToBuildingItemGroup);
